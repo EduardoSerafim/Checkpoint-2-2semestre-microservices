@@ -1,4 +1,4 @@
-package com.servico.ativo.config;
+package com.servicoemail.servicoEmail.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

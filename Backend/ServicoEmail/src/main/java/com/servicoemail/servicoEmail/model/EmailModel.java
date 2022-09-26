@@ -1,12 +1,20 @@
-package com.servico.ativo.dto;
+package com.servicoemail.servicoEmail.model;
+
 
 import java.time.LocalDateTime;
 
-import com.servico.ativo.model.StatusEmail;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-public class EmailDto {
+import lombok.Data;
 
+@Data
+@Document(collection = "Email")
+public class EmailModel {
+	
+	@Id
 	private String id;
+	
 	private String ownerRef;
 	private String emailFrom;
 	private String emailTo;
@@ -14,7 +22,6 @@ public class EmailDto {
 	private String text;
 	private LocalDateTime sendDateEmail;
 	private StatusEmail statusEmail;
-	
 	
 	public String getId() {
 		return id;
@@ -64,6 +71,7 @@ public class EmailDto {
 	public void setStatusEmail(StatusEmail statusEmail) {
 		this.statusEmail = statusEmail;
 	}
+	
 	
 	
 }

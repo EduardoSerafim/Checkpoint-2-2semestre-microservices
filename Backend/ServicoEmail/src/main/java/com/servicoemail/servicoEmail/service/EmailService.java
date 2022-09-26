@@ -1,4 +1,4 @@
-package com.servico.ativo.service;
+package com.servicoemail.servicoEmail.service;
 
 import java.time.LocalDateTime;
 
@@ -7,9 +7,9 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-import com.servico.ativo.model.EmailModel;
-import com.servico.ativo.model.StatusEmail;
-import com.servico.ativo.repository.EmailRepository;
+import com.servicoemail.servicoEmail.model.EmailModel;
+import com.servicoemail.servicoEmail.model.StatusEmail;
+import com.servicoemail.servicoEmail.repository.EmailRepository;
 
 @Service
 public class EmailService {
